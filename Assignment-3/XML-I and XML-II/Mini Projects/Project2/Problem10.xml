@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVSCHEDULE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="TVSCHEDULE.xsd">
+    <CHANNEL NAME="News Channel">
+        <DAY>Monday</DAY>
+        <HOLIDAY>No</HOLIDAY>
+        <BANNER>Live News</BANNER>
+        <PROGRAMSLOT VTR="987654">
+            <TIME>18:00</TIME>
+            <TITLE LANGUAGE="English">Evening News</TITLE>
+            <DESCRIPTION>Daily news and headlines.</DESCRIPTION>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT VTR="123456">
+            <TIME>19:00</TIME>
+            <TITLE LANGUAGE="English">Sports Update</TITLE>
+            <DESCRIPTION>Latest sports news.</DESCRIPTION>
+        </PROGRAMSLOT>
+    </CHANNEL>
+</TVSCHEDULE>

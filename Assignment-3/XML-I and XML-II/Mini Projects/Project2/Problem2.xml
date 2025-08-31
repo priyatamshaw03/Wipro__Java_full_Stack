@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <headers>
+        <sender>rahul.modi@wipro.com</sender>
+        <recipient>you@wipro.com</recipient>
+    </headers>
+    <body>
+        <subject>Re: my queries on XML</subject>
+        <content>Hi, I am working on XML now.</content>
+    </body>
+</message>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product [
+<!ELEMENT product (price, color+)>
+<!ATTLIST product id CDATA #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+]>
+<product id="09255671">
+    <price>2000.00</price>
+    <color>Red</color>
+    <color>Burgundy</color>
+    <color>Red</color>
+    <color>Burgundy</color>
+</product>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "TVSCHEDULE.dtd">
+<TVSCHEDULE>
+    <CHANNEL NAME="News Channel">
+        <DAY>Monday</DAY>
+        <HOLIDAY>No</HOLIDAY>
+        <PROGRAMSLOT>
+            <TIME>10:00</TIME>
+            <TITLE LANGUAGE="English">Daily News</TITLE>
+            <DESCRIPTION>Morning headlines and weather.</DESCRIPTION>
+        </PROGRAMSLOT>
+        <PROGRAMSLOT>
+            <TIME>11:00</TIME>
+            <TITLE LANGUAGE="English">Weather Report</TITLE>
+            <DESCRIPTION>Detailed weather forecast.</DESCRIPTION>
+        </PROGRAMSLOT>
+    </CHANNEL>
+</TVSCHEDULE>

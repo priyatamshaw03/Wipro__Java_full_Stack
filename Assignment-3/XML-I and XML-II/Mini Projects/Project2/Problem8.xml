@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="classroom.xsd">
+    <student firstName="John" lastName="Doe" division="A" marks="85"/>
+    <student firstName="Jane" lastName="Smith" division="B" marks="92"/>
+</classroom>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="classroom">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="StudentDetails" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="StudentDetails">
+        <xs:attribute name="firstName" type="xs:string" use="required"/>
+        <xs:attribute name="lastName" type="xs:string" use="required"/>
+        <xs:attribute name="division" type="xs:string" use="required"/>
+        <xs:attribute name="marks" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+</xs:schema>

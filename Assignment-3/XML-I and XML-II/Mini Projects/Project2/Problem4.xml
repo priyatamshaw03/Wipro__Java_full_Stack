@@ -1,0 +1,33 @@
+<catalog>
+    <product>
+        <product_description>Cardigan Sweater</product_description>
+        <product_image>cardigan.jpg</product_image>
+        <item_number>GW73573</item_number>
+        <size_description>Medium</size_description>
+        <color_swatch>
+            <color_swatch_image>red_cardigan.jpg</color_swatch_image>
+            <color_swatch>red</color_swatch>
+        </color_swatch>
+        <color_swatch>
+            <color_swatch_image>burgundy_cardigan.jpg</color_swatch_image>
+            <color_swatch>burgundy</color_swatch>
+        </color_swatch>
+    </product>
+    <catalog_item>
+        <item_number>GW73574</item_number>
+        <gender>Women's</gender>
+        <price>42.50</price>
+    </catalog_item>
+</catalog>
+
+<!ELEMENT catalog (product, catalog_item)>
+<!ELEMENT product (product_description, product_image, item_number, size_description, color_swatch+)>
+<!ELEMENT product_description (#PCDATA)>
+<!ELEMENT product_image (#PCDATA)>
+<!ELEMENT item_number (#PCDATA)>
+<!ELEMENT size_description (#PCDATA)>
+<!ELEMENT color_swatch (color_swatch_image, color_swatch)>
+<!ELEMENT color_swatch_image (#PCDATA)>
+<!ELEMENT catalog_item (item_number, gender, price)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

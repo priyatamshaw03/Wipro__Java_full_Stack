@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>FirstVisitServlet</servlet-name>
+        <servlet-class>FirstVisitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstVisitServlet</servlet-name>
+        <url-pattern>/firstvisit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayCookiesServlet</servlet-name>
+        <servlet-class>DisplayCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayCookiesServlet</servlet-name>
+        <url-pattern>/cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionTrackingServlet</servlet-name>
+        <servlet-class>SessionTrackingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTrackingServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+</web-app>

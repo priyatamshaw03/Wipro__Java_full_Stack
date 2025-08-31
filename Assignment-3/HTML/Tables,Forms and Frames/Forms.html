@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            text-align: center;
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <th colspan="2">Visitors Information</th>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>User's Interest:</td>
+                <td>
+                    <input type="checkbox" name="interest" value="research"> Research
+                    <input type="checkbox" name="interest" value="purchase"> Purchase
+                </td>
+            </tr>
+            <tr>
+                <td>Occupation:</td>
+                <td>
+                    <select name="occupation">
+                        <option selected>Student</option>
+                        <option>Teacher</option>
+                        <option>Engineer</option>
+                        <option>Doctor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Send Junk Emails?</td>
+                <td>
+                    <input type="radio" name="junk" value="yes"> Absolutely<br>
+                    <input type="radio" name="junk" value="no"> No way man
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

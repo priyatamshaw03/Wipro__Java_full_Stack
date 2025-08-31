@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+        <html>
+            <body>
+                <h2>Mobile Phone Sales Summary</h2>
+                <table border="1">
+                    <tr bgcolor="#9acd32">
+                        <th>ModelName</th>
+                        <th>ModelID</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                        <th>Color</th>
+                        <th>SIMSize</th>
+                        <th>Memory</th>
+                        <th>Camera</th>
+                        <th>TouchScreen</th>
+                        <th>NoSold</th>
+                        <th>StoreName</th>
+                    </tr>
+                    <xsl:for-each select="MobilePhoneSales/SalesRecord">
+                        <tr>
+                            <td><xsl:value-of select="ModelName"/></td>
+                            <td><xsl:value-of select="ModelID"/></td>
+                            <td><xsl:value-of select="Brand"/></td>
+                            <td><xsl:value-of select="Price"/></td>
+                            <td><xsl:value-of select="Color"/></td>
+                            <td><xsl:value-of select="SIMSize"/></td>
+                            <td><xsl:value-of select="Memory"/></td>
+                            <td><xsl:value-of select="Camera"/></td>
+                            <td><xsl:value-of select="TouchScreen"/></td>
+                            <td>
+                                <xsl:choose>
+                                    <xsl:when test="NoSold &gt; 10">
+                                        <span style="color:red; font-weight:bold;">
+                                            <xsl:value-of select="NoSold"/>
+                                        </span>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="NoSold"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </td>
+                            <td><xsl:value-of select="StoreName"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

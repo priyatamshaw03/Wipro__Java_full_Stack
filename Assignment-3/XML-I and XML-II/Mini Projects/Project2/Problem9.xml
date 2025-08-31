@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classroom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="classroom.xsd">
+    <student firstName="Soumya" lastName="Nath" division="A" marks="95"/>
+    <student firstName="Rahul" lastName="Sharma" division="B" marks="88"/>
+</classroom>

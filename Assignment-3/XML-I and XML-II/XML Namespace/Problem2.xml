@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <mobile:Mobile xmlns:mobile="http://talents.wipro.com/mobile">
+        <mobile:Model>Qualcomm Snapdragon 200</mobile:Model>
+        <mobile:Brand>Moto E</mobile:Brand>
+        <mobile:OS>Android</mobile:OS>
+        <mobile:Display>HD Screen</mobile:Display>
+    </mobile:Mobile>
+    <landline:Landline xmlns:landline="http://talents.wipro.com/landline">
+        <landline:Model>BSNL M71 Landline</landline:Model>
+        <landline:OS>OSS</landline:OS>
+        <landline:Display>LED Screen</landline:Display>
+    </landline:Landline>
+</products>

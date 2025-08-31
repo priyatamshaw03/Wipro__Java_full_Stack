@@ -1,0 +1,10 @@
+<address>
+    <name>Manjunath</name>
+    <company>Wipro</company>
+    <phone>9966775533</phone>
+</address>
+
+<!ELEMENT address (name, company, phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>

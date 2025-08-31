@@ -1,0 +1,28 @@
+<web-app>
+    <servlet>
+        <servlet-name>ConfigContextServlet</servlet-name>
+        <servlet-class>ConfigContextServlet</servlet-class>
+        <init-param>
+            <param-name>author</param-name>
+            <param-value>John Doe</param-value>
+        </init-param>
+        <init-param>
+            <param-name>version</param-name>
+            <param-value>1.0</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConfigContextServlet</servlet-name>
+        <url-pattern>/configContextDemo</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>company</param-name>
+        <param-value>ABC Pvt Ltd</param-value>
+    </context-param>
+    <context-param>
+        <param-name>location</param-name>
+        <param-value>India</param-value>
+    </context-param>
+</web-app>

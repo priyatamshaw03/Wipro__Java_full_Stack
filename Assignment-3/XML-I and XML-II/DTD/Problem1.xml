@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Menu [
+<!ELEMENT Menu (Kurta)>
+<!ELEMENT Kurta (Price)>
+<!ATTLIST Kurta Name CDATA #REQUIRED>
+<!ATTLIST Kurta ID CDATA #REQUIRED>
+<!ELEMENT Price (#PCDATA)>
+]>
+<Menu>
+    <Kurta Name="Maroon" ID="045876655">
+        <Price>550</Price>
+    </Kurta>
+</Menu>

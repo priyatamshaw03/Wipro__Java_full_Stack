@@ -1,0 +1,11 @@
+CREATE TABLE XYZ_PROFILE (
+  Email varchar(255) NOT NULL,
+  Password varchar(255) NOT NULL,
+  Name varchar(255) DEFAULT NULL,
+  DateOfBirth date DEFAULT NULL,
+  Gender varchar(50) DEFAULT NULL,
+  Occupation varchar(255) DEFAULT NULL,
+  City varchar(255) DEFAULT NULL,
+  Mobile varchar(20) DEFAULT NULL,
+  PRIMARY KEY (Email)
+);

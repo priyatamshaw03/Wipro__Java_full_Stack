@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <script>
+        function validateForm() {
+            var uid = document.getElementById("uid").value;
+            var pass = document.getElementById("pass").value;
+            var dob = document.getElementById("dob").value;
+            var contact = document.getElementById("contact").value;
+
+            // UserID: 4-8 characters
+            if (uid.length < 4 || uid.length > 8) {
+                alert("UserID must be 4 to 8 characters long.");
+                return false;
+            }
+
+            // Password Validation
+            var regex = /^(?=.*[0-9])(?=.*[A-Z]).{6,}$/;
+            if (!regex.test(pass)) {
+                alert("Password must be at least 6 chars, contain 1 uppercase and 1 number.");
+                return false;
+            }
+
+            // DOB Validation
+            var today = new Date();
+            var birth = new Date(dob);
+            if (birth >= today) {
+                alert("DOB must be less than today's date.");
+                return false;
+            }
+
+            // Contact Validation
+            if (!/^\d{10}$/.test(contact)) {
+                alert("Contact number must be exactly 10 digits.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form method="post" action="RegisterServlet" onsubmit="return validateForm();">
+        User Id: <input type="text" id="uid" name="uid"><br><br>
+        Password: <input type="password" id="pass" name="pass"><br><br>
+        Date Of Birth: <input type="date" id="dob" name="dob"><br><br>
+        Gender: 
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+        State:
+        <select name="state">
+            <option value="Karnataka">Karnataka</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </select><br><br>
+        Contact Number: <input type="number" id="contact" name="contact"><br><br>
+        Address: <textarea name="address"></textarea><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>

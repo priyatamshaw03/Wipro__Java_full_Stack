@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student_info:StudentRootTag xmlns:student_info="http://wipro.com/student">
+    <student_info:StudentID>123</student_info:StudentID>
+    <student_info:TheoryMarks>85</student_info:TheoryMarks>
+    <student_info:PracticalMarks>90</student_info:PracticalMarks>
+    <student_info:TotalMarks>175</student_info:TotalMarks>
+    <student_info:Gender>Male</student_info:Gender>
+    <student_info:Course>Computer Science</student_info:Course>
+</student_info:StudentRootTag>

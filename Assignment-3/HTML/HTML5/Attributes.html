@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 2 & 3 - HTML5 Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            width: 350px;
+            background: #f9f9f9;
+        }
+        .form-container h3 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hands-on Assignment 2 Form -->
+    <div class="form-container">
+        <h3>Student Registration Form</h3>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Enter full name" required><br>
+
+            <label>Roll No:</label><br>
+            <input type="number" name="roll" placeholder="Enter roll number" required><br>
+
+            <label>Email:</label><br>
+            <!-- HTML5 email + required + placeholder -->
+            <input type="email" name="email" placeholder="Enter valid email" required><br>
+
+            <label>Course:</label><br>
+            <select name="course" required>
+                <option value="">--Select Course--</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>B.Tech</option>
+            </select><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!-- Hands-on Assignment 3 Form -->
+    <div class="form-container">
+        <h3>Visitor Information Form</h3>
+        <form>
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="Enter username" required><br>
+
+            <label>Password:</label><br>
+            <!-- HTML5 password with required -->
+            <input type="password" name="password" placeholder="Enter password" required><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female" required> Female <br><br>
+
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+            <input type="checkbox" name="hobby" value="Sports"> Sports
+            <input type="checkbox" name="hobby" value="Music"> Music <br><br>
+
+            <label>Upload Files:</label><br>
+         
+            <input type="file" name="files" multiple><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phones>
+    <mobile:Phone xmlns:mobile="http://wipro.com/mobile">
+        <mobile:name>Moto E</mobile:name>
+        <mobile:ModelID>XT1524</mobile:ModelID>
+        <mobile:Processor>Qualcomm Snapdragon 200</mobile:Processor>
+        <mobile:Battery>2390 mAh</mobile:Battery>
+    </mobile:Phone>
+    <landline:Phone xmlns:landline="http://wipro.com/landline">
+        <landline:name>Beetel M71 Landline</landline:name>
+        <landline:ModelID>BTL789</landline:ModelID>
+        <landline:Display>LCD Screen</landline:Display>
+    </landline:Phone>
+</phones>

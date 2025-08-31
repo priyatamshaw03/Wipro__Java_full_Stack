@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student:StudentMarks xmlns:student="http://talents.wipro.com/student_details">
+    <student:StudentID>1</student:StudentID>
+    <student:TheoryMarks>75</student:TheoryMarks>
+    <student:PracticalMarks>80</student:PracticalMarks>
+    <student:TotalMarks>155</student:TotalMarks>
+</student:StudentMarks

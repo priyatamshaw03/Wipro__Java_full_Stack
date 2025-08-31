@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student_registration_form>
+    <student>
+        <name>Soumyadeep Nath</name>
+        <student_id>16</student_id>
+        <age>20</age>
+        <gender>Male</gender>
+        <course>Programming</course>
+    </student>
+</student_registration_form>

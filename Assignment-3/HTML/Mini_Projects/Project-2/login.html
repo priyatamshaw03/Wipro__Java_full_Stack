@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script type="text/javascript">
+        function validateLogin() {
+            var uname = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+            
+            var regex = /^(?=.*[0-9])(?=.*[A-Z]).{6,}$/;
+
+            if (uname == "") {
+                alert("Username cannot be empty!");
+                return false;
+            }
+            if (pass == "") {
+                alert("Password cannot be empty!");
+                return false;
+            }
+            if (!regex.test(pass)) {
+                alert("Password must be at least 6 chars, contain 1 uppercase and 1 number.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <form method="post" action="LoginServlet" onsubmit="return validateLogin();">
+        Enter User Name: <input type="text" id="uname" name="uname"><br><br>
+        Enter Pass Word: <input type="password" id="pass" name="pass"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <a href="register.html">New User</a>
+</body>
+</html>

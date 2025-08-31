@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="student.xsd">
+
+    <name>Soumyadeep Nath</name>
+    <id>12345</id>
+
+</student>
